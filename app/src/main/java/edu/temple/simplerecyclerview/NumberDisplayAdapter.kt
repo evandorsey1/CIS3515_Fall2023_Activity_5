@@ -20,6 +20,9 @@ class NumberDisplayAdapter (private val numbers: Array<Int>, _callBack : (Int)->
         // enumerate views inside layout
         val textView = layout.findViewById<TextView>(R.id.textView)
 
+        init {
+            textView.setOnClickListener{callBack(numbers[adapterPosition])}
+        }
 
     }
 
