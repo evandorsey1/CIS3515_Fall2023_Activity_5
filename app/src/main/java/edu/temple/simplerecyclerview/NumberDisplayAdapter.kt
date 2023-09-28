@@ -21,6 +21,9 @@ class NumberDisplayAdapter (private val numbers: Array<Int>) : RecyclerView.Adap
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NumberViewHolder {
 
         val layout = LayoutInflater.from(parent.context).inflate(R.layout.textview_layout, parent, false)
+
+
+
         return NumberViewHolder(layout)
     }
 
